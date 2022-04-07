@@ -14,8 +14,12 @@ body {
 	font-family:"Roboto", sans-serif;
 }
 [class*="__container"] {
-	max-width: 1020px;
+	/* ! при добавлении отступов безопасности или прибавляем padding*2 к max-width (120+30=1050) или указываем box-sizing: content-box; чтобы отступы безопасности не учитывались*/
+	/* box-sizing: content-box; */
+	max-width: 1050px;
 	margin: 0px auto;
+	/* ! отступы безопасности */
+	padding: 0px 15px;
 }
 /* ================================================================ */
 
@@ -109,7 +113,8 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 }
 .item-promise {
 	padding: 0px 12px;
-	flex: 0 0 33.333%;
+	flex: 1 1 33.333%;
+	min-width: 260px;
 	column-gap: 23px;
 	display: flex;
 	align-items: flex-start;
@@ -211,7 +216,7 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 }
 .bottom-impact__item {
 	padding: 0px 12px;
-	flex: 0 1 25%;
+	flex: 1 1 25%;
 	align-items: flex-start;
 	display: flex;
 	column-gap: 11px;
