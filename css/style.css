@@ -40,10 +40,10 @@ body {
 }
 .main__container {
 }
-.main__our-promise {
+.main__promise {
 	margin: 0px 0px 122px 0px;
 }
-.main__our-impact {
+.main__impact {
 	margin: 0px 0px 30px 0px;
 }
 /* ================================================================ */
@@ -91,13 +91,13 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 }
 /* ================================================================ */
 
-.our-promise {
+.promise {
 }
-.our-promise__header-block {
+.promise__header-block {
 	max-width: 583px;
 	margin: 0px 0px 68px 0px;
 }
-.our-promise__columns {
+.promise__items {
 	margin: 0px -12px;
 	display: flex;
 	/* ! для выравнивания флекс-элементов по центру при адаптиве */
@@ -105,37 +105,32 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 	row-gap: 24px;
 	flex-wrap: wrap;
 }
-.our-promise__column {
+.promise__item {
+}
+.item-promise {
 	padding: 0px 12px;
-	flex: 0 1 33.333%;
-}
-.our-promise__item {
-}
-.item-our-promise {
-	margin: 0px -11.5px;
+	flex: 0 0 33.333%;
+	column-gap: 23px;
 	display: flex;
 	align-items: flex-start;
 }
-.item-our-promise__icon {
-	padding: 0px 11.5px;
-}
-.item-our-promise__image {
+.item-promise__icon {
+	flex: 0 0 63px;	
 	max-width: 63px;
 }
-.item-our-promise__content {
-	padding: 0px 11.5px;	
+.item-promise__content {
 }
-.item-our-promise__content>*:not(:last-child){
+.item-promise__content>*:not(:last-child){
 	margin: 0px 0px 20px 0px;
 }
-.item-our-promise__title {
+.item-promise__title {
 	padding: 4px 0px 0px 0px;
 	font-weight: 900;
 	font-size: 19px;
 	line-height: 137%;
 	color: #F2726F;
 }
-.item-our-promise__text {
+.item-promise__text {
 	line-height: 150%;
 	letter-spacing: 0.15px;
 	color: #4B4B4B;
@@ -143,21 +138,21 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 
 /* ================================================================ */
 
-.our-impact {
+.impact {
 	background: #29C3BE;
 	padding: 0px 0px 211px 0px;
 }
-.our-impact__container{
+.impact__container{
 }
-.our-impact__top{
+.impact__top{
 	margin: 0px 0px 79px 0px;
 }
-.top-our-impact{
+.top-impact{
 /* ! для позиционирования пятна(blob) относительно блока (top-our-impact), но оно съезжает при адаптиве */
 	/* position: relative; */
 }
 /* ! позиционирование пятна(blob) относительно блока (top-our-impact), но оно съезжает при адаптиве */
-/* .top-our-impact::after{
+/* .top-impact::after{
 	content: "";
 	background: url("../img/our-impact/blob.png") 0 0 no-repeat;
 	width: 695px;
@@ -167,24 +162,24 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 	position: absolute;
 	z-index: 1;
 }  */
-.top-our-impact__columns {
+.top-impact__columns {
 	display: flex;
 	position: relative;
 	z-index: 2;
 	gap: 111px;
 }
-.top-our-impact__header-block {	
+.top-impact__header-block {	
 	flex: 1 1 auto;
 	padding: 112px 0px 0px 0px;	
 }
-.top-our-impact__picture {
+.top-impact__picture {
 	flex: 0 0 498px;
 	margin: -80px 0px 0px 0px;	
 /* ! для позиционирования пятна(blob) относительно картинки (dog) */
 	position: relative;
 }
 /* ! позиционирование пятна(blob) относительно картинки (dog) */
-.top-our-impact__picture::after{
+.top-impact__picture::after{
 	content: "";
 	background: url("../img/our-impact/blob.png") 0 0 no-repeat;
 	width: 695px;
@@ -194,7 +189,7 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 	position: absolute;
 	z-index: 1;
 }
-.top-our-impact__image {
+.top-impact__image {
 /* ! для позиционирование пятна(blob) относительно картинки (dog) */
 	position: relative;
 	z-index: 2;
@@ -204,45 +199,41 @@ background: url("../img/our-impact/mark.svg") 0 0 no-repeat;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
 
-.our-impact__bottom {	
+.impact__bottom {	
 }
-.bottom-our-impact {
+.bottom-impact {
 }
-.bottom-our-impact__columns {
+.bottom-impact__items {
 	margin: 0px -12px;
 	display: flex;
-	justify-content: center;
 	row-gap: 24px;
 	flex-wrap: wrap;
 }
-.bottom-our-impact__column {
+.bottom-impact__item {
 	padding: 0px 12px;
 	flex: 0 1 25%;
-}
-.bottom-our-impact__item {
-	margin: 0px -5.5px;
+	align-items: flex-start;
 	display: flex;
+	column-gap: 11px;
 }
-.bottom-our-impact__icon {
-	padding: 0px 5.5px;
+.bottom-impact__icon {
+	flex: 0 0 76px;
+	max-width: 76px;
 }
-.bottom-our-impact__image {
-}
-.bottom-our-impact__content {
-	padding: 0px 5.5px;
+.bottom-impact__content {
 
 }
-.bottom-our-impact__content>*:not(:last-child){
+.bottom-impact__content>*:not(:last-child){
 	margin: 0px 0px 3px 0px;
 }
-.bottom-our-impact__statictics {
+.bottom-impact__statictics {
 	padding: 4px 0px 0px 0px;
 	color: #fff;
 	font-weight: 900;
 	font-size: 36px;
 	line-height: 117%;
 }
-.bottom-our-impact__title {
+.bottom-impact__title {
 	color: #5D62B5;
 	font-weight: 700;
 	letter-spacing: 0.15px;
